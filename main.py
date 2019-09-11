@@ -1,6 +1,7 @@
 import os
-from pathlib import Path
 import zipfile
+from pathlib import Path
+import urllib.request
 
 # Thanks to AwesometacularVG for detailing how to use the HTML Shell here:
 # https://www.kongregate.com/forums/1021798-game-programming-subforum/topics/614955-guide-uploading-unity-webgl-games-with-kongs-api?page=1
@@ -43,3 +44,10 @@ source.replace(destination)
 zip_source = Path("Build/Build/")
 zip_destination = Path("Build/Additional_Files")
 zipfolder(zip_source, zip_destination)
+
+# https://raw.githubusercontent.com/bhattarai333/UnityWebGLKongregateAPIIntegrator/master/kongregate_shell_updated.html
+
+with urllib.request.urlopen("https://raw.githubusercontent.com/bhattarai333/UnityWebGLKongregateAPIIntegrator/master/kongregate_shell_updated.html") as url:
+    shellHTML = url.read().decode()
+    destination = Path("Build/kongregate_shell_updated.html")
+    destination.write_text(shellHTML)
