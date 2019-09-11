@@ -8,7 +8,7 @@ import zipfile
 
 # https://stackoverflow.com/questions/14568647/create-zip-in-python
 def zipfolder(src, dst):
-    zf = zipfile.ZipFile("%s.zip" % dst, "w", zipfile.ZIP_DEFLATED)
+    zf = zipfile.ZipFile("%s.zip" % (dst), "w", zipfile.ZIP_DEFLATED)
     abs_src = os.path.abspath(src)
     for dirname, subdirs, files in os.walk(src):
         for filename in files:
