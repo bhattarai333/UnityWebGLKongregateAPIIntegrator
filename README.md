@@ -9,7 +9,7 @@ Thanks to AwesometacularVG for detailing how to use the HTML Shell [here](https:
 The program can be used by placing the main.py in the same directory as a folder named "Build" where Unity
 will be placing the index.html, template folder and Build folders.
 
-The following is an example of the file structure:
+The following is an ![example of the file structure](https://raw.githubusercontent.com/bhattarai333/UnityWebGLKongregateAPIIntegrator/master/filestructure.png).
 
 Any Folder
 ├── main.py
