@@ -4,7 +4,7 @@ from pathlib import Path
 import urllib.request
 
 # Thanks to AwesometacularVG for detailing how to use the HTML Shell here:
-# https://www.kongregate.com/forums/1021798-game-programming-subforum/topics/614955-guide-uploading-unity-webgl-games-with-kongs-api?page=1
+# https://www.kongregate.com/forums/1021798-game-programming-subforum/topics/614955-guide-uploading-unity-webgl-games-with-kongs-api
 
 
 # https://stackoverflow.com/questions/14568647/create-zip-in-python
