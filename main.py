@@ -13,10 +13,14 @@ def zipfolder(src, dst):
     abs_src = os.path.abspath(src)
     for dirname, subdirs, files in os.walk(src):
         for filename in files:
+            print("Filename: %s DST: %s" % (filename, dst))
             absname = os.path.abspath(os.path.join(dirname, filename))
             arcname = absname[len(abs_src) + 1:]
             print('zipping %s as %s' % (os.path.join(dirname, filename),
                                         arcname))
+            if(filename == arcname):
+                print("skipping")
+                continue
             zf.write(absname, arcname)
     zf.close()
 
@@ -41,7 +45,7 @@ source = folder_to_open
 destination = Path("Build/Build/Template/")
 source.replace(destination)
 
-zip_source = Path("Build/Build/")
+zip_source = Path("Build/")
 zip_destination = Path("Build/Additional_Files")
 zipfolder(zip_source, zip_destination)
 
