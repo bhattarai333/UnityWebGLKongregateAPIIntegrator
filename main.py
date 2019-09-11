@@ -25,7 +25,7 @@ file_to_open = data_folder / "index.html"
 indexHTML = file_to_open.read_text()
 
 indexHTML = indexHTML.replace("Build/UnityLoader.js", "UnityLoader.js")
-indexHTML = indexHTML.replace("Build/Builds.json", "Builds.json")
+indexHTML = indexHTML.replace("Build/Build.json", "Build.json")
 indexHTML = indexHTML.replace("Build/Template/anthill.png", "Template/anthill.png")
 
 file_to_open.write_text(indexHTML)
