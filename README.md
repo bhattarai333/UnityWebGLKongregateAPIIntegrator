@@ -9,14 +9,9 @@ Thanks to AwesometacularVG for detailing how to use the HTML Shell [here](https:
 The program can be used by placing the main.py in the same directory as a folder named "Build" where Unity
 will be placing the index.html, template folder and Build folders.
 
-The following is an ![example of the file structure](https://raw.githubusercontent.com/bhattarai333/UnityWebGLKongregateAPIIntegrator/master/filestructure.png).
+The following is an example of the file structure: 
 
-Any Folder
-├── main.py
-├── Build
-│   ├── index.html
-│   ├── Template
-│   ├── Build
+![Example file structure](https://raw.githubusercontent.com/bhattarai333/UnityWebGLKongregateAPIIntegrator/master/filestructure.png)
 
 Once the build files are in the "Build" directory, the main.py can be run. It will edit your index.html according 
 to AwesometacularVGs guide. It will then move the index.html file and Template folder into Unity's Build folder
