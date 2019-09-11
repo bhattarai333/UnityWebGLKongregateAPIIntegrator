@@ -2,6 +2,7 @@ import os
 import zipfile
 from pathlib import Path
 import urllib.request
+# Instructions for use in README file or: https://github.com/bhattarai333/UnityWebGLKongregateAPIIntegrator
 
 # Thanks to AwesometacularVG for detailing how to use the HTML Shell here:
 # https://www.kongregate.com/forums/1021798-game-programming-subforum/topics/614955-guide-uploading-unity-webgl-games-with-kongs-api
