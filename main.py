@@ -23,7 +23,7 @@ def zipfolder(src, dst):
             print('zipping %s as %s' % (os.path.join(dirname, filename),
                                         arcname))
             if (filename == arcname):
-                print("skipping")
+                print("skipping %s" % filename)
                 continue
             zf.write(absname, arcname)
     zf.close()
