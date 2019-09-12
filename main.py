@@ -50,9 +50,9 @@ zip_source = Path("Build/")
 zip_destination = Path("Build/Additional_Files")
 zipfolder(zip_source, zip_destination)
 
-# https://raw.githubusercontent.com/bhattarai333/UnityWebGLKongregateAPIIntegrator/master/kongregate_shell_updated.html
+# https://raw.githubusercontent.com/bhattarai333/UnityWebGLKongregateAPIIntegrator/master/updated_kongregate_shell.html
 
-with urllib.request.urlopen("https://raw.githubusercontent.com/bhattarai333/UnityWebGLKongregateAPIIntegrator/master/kongregate_shell_updated.html") as url:
+with urllib.request.urlopen("https://raw.githubusercontent.com/bhattarai333/UnityWebGLKongregateAPIIntegrator/master/updated_kongregate_shell.html") as url:
     shellHTML = url.read().decode()
     destination = Path("Build/kongregate_shell_updated.html")
     destination.write_text(shellHTML)
