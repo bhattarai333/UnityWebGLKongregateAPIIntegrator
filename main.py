@@ -59,10 +59,22 @@ destination = Path("Build/Build/index.html")
 
 source.replace(destination)
 
-folder_to_open = Path("Build/") / "Template/"
-source = folder_to_open
-destination = Path("Build/Build/Template/")
-source.replace(destination)
+try:
+    # If the Kongregate preloader is being used
+    folder_to_open = Path("Build/") / "Template/"
+    source = folder_to_open
+    destination = Path("Build/Build/Template/")
+    source.replace(destination)
+except FileNotFoundError:
+    # If default template is being used
+    folder_to_open = Path("Build/") / "TemplateData/"
+    source = folder_to_open
+    destination = Path("Build/Build/TemplateData/")
+    source.replace(destination)
+    # add some way to edit the default index.html for height and width
+    # also need to remove the borders and fullscreen button here
+
+
 
 zip_source = Path("Build/")
 zip_destination = Path("Build/Additional_Files")
