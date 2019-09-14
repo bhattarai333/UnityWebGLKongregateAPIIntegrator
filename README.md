@@ -30,8 +30,8 @@ Next you have to attach the KongregateAPI script which is found [here](https://d
 
 If you want to use the Kongregate API, you will have to use the Kongregate preloader which can be found [here](https://github.com/kongregate/webgl-preloader).
 You take the "Kongregate Preloader" folder, and put it into a folder called "WebGLTemplates" within your project's "Assets" folder. 
-You then open the "Project Settings", scroll to "Player", choose HTML 5 and select the Kongregate preloader. Build normally
-from there.
+You then open the "Project Settings", scroll to "Player", select the HTML 5 section, select "Resolution and Presentation"
+and select the Kongregate preloader. Build to a folder named "Build" normally from there.
 
 All calls to the Kongregate API will need to be changed from:
 Application.ExternalCall("kongregate.stats.submit", "ExampleStatisticName", ExampleStatistic);
