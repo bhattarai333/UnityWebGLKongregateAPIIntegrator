@@ -13,6 +13,8 @@ The following is an example of the file structure:
 
 ![Example file structure](https://raw.githubusercontent.com/bhattarai333/UnityWebGLKongregateAPIIntegrator/master/filestructure.png)
 
+You can place the info.json in the same folder as the main.py, but it is not required.
+
 IMPORTANT: You must choose a folder named "Build" from Unity when building your project. You cannot build it to a different folder and then paste the files into the "Build" folder.
 
 Once the build files are in the "Build" directory, the main.py can be run. It will edit your index.html according 
