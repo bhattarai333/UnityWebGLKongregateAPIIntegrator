@@ -25,6 +25,14 @@ file is downloaded from this repository and placed along with the zip file.
 The width and height in pixels are set at a default of 1000x650, and will still need to be edited according to your
 game's dimensions.
 
+To use the API, you have to create a GameObject in the first scene of your project and name it "KongregateAPI". 
+Next you have to attach the KongregateAPI script which is found [here](https://docs.kongregate.com/docs/unity-api) to that gameobject.
+
+If you want to use the Kongregate API, you will have to use the Kongregate preloader which can be found [here](https://github.com/kongregate/webgl-preloader).
+You take the "Kongregate Preloader" folder, and put it into a folder called "WebGLTemplates" within your project's "Assets" folder. 
+You then open the "Project Settings", scroll to "Player", choose HTML 5 and select the Kongregate preloader. Build normally
+from there.
+
 All calls to the Kongregate API will need to be changed from:
 Application.ExternalCall("kongregate.stats.submit", "ExampleStatisticName", ExampleStatistic);
 to
