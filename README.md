@@ -13,6 +13,8 @@ The following is an example of the file structure:
 
 ![Example file structure](https://raw.githubusercontent.com/bhattarai333/UnityWebGLKongregateAPIIntegrator/master/filestructure.png)
 
+IMPORTANT: You must choose a folder named "Build" from Unity when building your project. You cannot build it to a different folder and then paste the files into the "Build" folder.
+
 Once the build files are in the "Build" directory, the main.py can be run. It will edit your index.html according 
 to AwesometacularVGs guide. It will then move the index.html file and Template folder into Unity's Build folder
 and zip the Build folder into a zip file named "Additional_Files.zip". Finally, the updated Kongregate HTML shell
